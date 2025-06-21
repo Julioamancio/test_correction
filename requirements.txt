@@ -1,0 +1,17 @@
+Flask==3.0.2
+Flask-Login==0.6.3
+Flask-Mail==0.9.1
+Flask-Migrate==4.0.5
+Flask-SQLAlchemy==3.1.1
+bcrypt==4.1.2
+python-dotenv==1.0.1
+scikit-learn==1.5.0
+gunicorn==22.0.0
+pytesseract==0.3.10
+Pillow==10.3.0
+pytesseract
+pillow
+opencv-python
+google-cloud-vision
+pyspellchecker
+language-tool-python
