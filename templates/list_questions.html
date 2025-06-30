@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Questions{% endblock %}
+{% block content %}
+<h2>Your Questions</h2>
+<table class="table table-striped">
+  <thead>
+    <tr><th>ID</th><th>Text</th><th>Image</th></tr>
+  </thead>
+  <tbody>
+    {% for q in qs %}
+    <tr>
+      <td>{{ q.id }}</td>
+      <td>{{ q.text[:60] }}</td>
+      <td>
+        {% if q.image_filename %}
+        <img src="{{ url_for('uploaded_file', filename=q.image_filename) }}" height="50">
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

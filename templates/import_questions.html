@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Import Questions{% endblock %}
+{% block content %}
+<h2>Import from DOCX</h2>
+<form method="post" enctype="multipart/form-data" class="w-50">
+  <div class="mb-3">
+    <input type="file" class="form-control" name="docx" accept=".docx" required>
+  </div>
+  <button class="btn btn-primary" type="submit">Import</button>
+</form>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}New Question{% endblock %}
+{% block content %}
+<h2>New Question</h2>
+<form method="post" enctype="multipart/form-data" class="w-75">
+  <div class="mb-3">
+    <textarea class="form-control" name="text" placeholder="Question text" required></textarea>
+  </div>
+  <div class="mb-3"><input class="form-control" name="option_a" placeholder="A" required></div>
+  <div class="mb-3"><input class="form-control" name="option_b" placeholder="B" required></div>
+  <div class="mb-3"><input class="form-control" name="option_c" placeholder="C" required></div>
+  <div class="mb-3"><input class="form-control" name="option_d" placeholder="D" required></div>
+  <div class="mb-3"><input class="form-control" name="option_e" placeholder="E" required></div>
+  <div class="mb-3"><input class="form-control" name="correct" placeholder="Correct option" required></div>
+  <div class="mb-3"><input class="form-control" name="classification" placeholder="Classification"></div>
+  <div class="mb-3"><input class="form-control" type="file" name="image"></div>
+  <button class="btn btn-success" type="submit">Save</button>
+</form>
+{% endblock %}
